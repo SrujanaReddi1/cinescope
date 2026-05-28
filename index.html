@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineScope</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    margin:0;
+    font-family:'Poppins', sans-serif;
+    background:#121212;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+.navbar{
+    background:#1c1c1c;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+}
+
+.logo{
+    font-size:35px;
+    font-weight:700;
+    color:white;
+}
+
+.logo span{
+    color:#e50914;
+}
+
+.search-bar input{
+    width:450px;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    background:#2a2a2a;
+    color:white;
+}
+
+.login button{
+    padding:10px 20px;
+    background:#e50914;
+    border:none;
+    border-radius:8px;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+    height:70vh;
+
+    background:
+    linear-gradient(to bottom,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.95)),
+    url('https://media.istockphoto.com/id/1494642262/photo/people-in-the-cinema-auditorium-with-empty-white-screen.jpg?s=612x612&w=0&k=20&c=wiVYHafqEAlvufaCpOTZhn9wuklrgKHdDHWqpmMGhjw=');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:100px;
+    margin:0;
+    letter-spacing:5px;
+}
+
+.hero span{
+    color:#e50914;
+}
+
+.tagline{
+    margin-top:20px;
+    font-size:24px;
+    color:#dddddd;
+    letter-spacing:3px;
+}
+
+/* MOVIES */
+
+.movies-section{
+    padding:60px;
+}
+
+.section-title{
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.movies{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:300px;
+    background:#1c1c1c;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.4s;
+    box-shadow:0px 10px 25px rgba(0,0,0,0.5);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0px 0px 25px rgba(229,9,20,0.7);
+}
+
+.card img{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+}
+
+.movie-info{
+    padding:20px;
+}
+
+.movie-info h2{
+    margin:0;
+    font-size:30px;
+}
+
+.movie-info p{
+    color:#bbbbbb;
+    line-height:28px;
+}
+
+.rating{
+    color:#ffd700;
+    font-size:20px;
+    margin-top:15px;
+}
+
+a{
+    text-decoration:none;
+    color:white;
+}
+footer{
+    text-align:center;
+    padding:30px;
+    background:#0f0f0f;
+    color:#888;
+    margin-top:120px;
+    font-size:14px;
+    width:100%;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<div class="navbar">
+
+    <div class="logo">
+        Cine<span>Scope</span>
+    </div>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Search Movies, Shows, Trailers...">
+    </div>
+
+    <div class="login">
+        <button>Login</button>
+    </div>
+
+</div>
+
+<!-- HERO SECTION -->
+
+<div class="hero">
+
+    <h1>Cine<span>Scope</span></h1>
+
+    <p class="tagline">
+        Explore Cinema Beyond The Screen
+    </p>
+
+</div>
+
+<!-- MOVIES -->
+
+<div class="movies-section">
+
+    <h2 class="section-title">
+        Trending Movies
+    </h2>
+
+    <div class="movies">
+
+        <!-- HI NANNA -->
+
+        <a href="hinanna.html">
+
+        <div class="card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8FqYrrL5-G2t97Gw6QujGPb_fClQwG_FTjIoN7SZ653LC0vaSyCcq4A7sRy71bQ5ty596&s=10">
+
+            <div class="movie-info">
+
+                <h2>Hi Nanna</h2>
+
+                <p>
+                    Emotional romantic drama starring Nani & Mrunal Thakur.
+                </p>
+
+                <div class="rating">
+                    ⭐ 8.3/10
+                </div>
+
+            </div>
+
+        </div>
+
+        </a>
+
+
+
+
+
+        <!-- KISHKINDAPURI -->
+
+        <a href="kishkindapuri.html">
+
+        <div class="card">
+
+            <img src="https://cdn.district.in/movies-assets/images/cinema/Kishkindhapuri--galery-bebfa2e0-7d93-11f0-a04d-a9abeee7b589.jpg">
+
+            <div class="movie-info">
+
+                <h2>Kishkindapuri</h2>
+
+                <p>
+                    Mystery thriller starring Bellamkonda Srinivas & Anupama.
+                </p>
+
+                <div class="rating">
+                    ⭐ 8.5/10
+                </div>
+
+            </div>
+
+        </div>
+
+        </a>
+
+
+
+
+
+        <!-- SITA RAMAM -->
+
+        <a href="sitaramam.html">
+
+        <div class="card">
+
+            <img src="https://www.bollywoodhungama.com/wp-content/uploads/2022/09/Sita-Ramam-9.jpg">
+
+            <div class="movie-info">
+
+                <h2>Sita Ramam</h2>
+
+                <p>
+                    Beautiful love story starring Dulquer Salman & Mrunal Thakur.
+                </p>
+
+                <div class="rating">
+                    ⭐ 8.6/10
+                </div>
+
+            </div>
+
+        </div>
+
+        </a>
+
+    </div>
+
+</div>
+<footer>
+
+Movie posters, trailers, and related media belong to their respective owners.
+This website is created for educational purposes only.
+
+</footer>
+</body>
+
+</html>
+

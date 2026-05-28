@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Hi Nanna - CineScope</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    margin:0;
+    font-family:'Poppins', sans-serif;
+    background:#121212;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+.navbar{
+    background:#1c1c1c;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+}
+
+.logo{
+    font-size:35px;
+    font-weight:700;
+    color:white;
+}
+
+.logo span{
+    color:#e50914;
+}
+
+/* BACK BUTTON */
+
+.back-btn{
+    margin:30px 70px;
+}
+
+.back-btn button{
+    padding:15px 25px;
+    background:#2a2a2a;
+    color:white;
+    border:none;
+    border-radius:10px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.back-btn button:hover{
+    background:#3a3a3a;
+}
+
+/* HERO MOVIE SECTION */
+
+.hero-movie{
+    display:flex;
+    gap:50px;
+    padding:60px;
+}
+
+.poster img{
+    width:320px;
+    border-radius:15px;
+    box-shadow:0px 10px 30px rgba(0,0,0,0.7);
+}
+
+.details{
+    max-width:700px;
+}
+
+.details h1{
+    font-size:70px;
+    margin-top:20px;
+}
+
+.rating{
+    color:#ffd700;
+    font-size:22px;
+    margin-top:20px;
+}
+
+.genre{
+    margin-top:25px;
+    font-size:22px;
+    color:#dddddd;
+}
+
+.lang{
+    margin-top:20px;
+}
+
+.lang span{
+    background:#2a2a2a;
+    padding:10px 15px;
+    border-radius:5px;
+    margin-right:10px;
+}
+
+/* ABOUT */
+
+.about{
+    padding:20px 70px 15px;
+}
+
+.about h2{
+    font-size:40px;
+}
+
+.about p{
+    line-height:35px;
+    font-size:20px;
+    color:#cccccc;
+}
+
+/* TRAILER */
+
+.trailer{
+    padding:20px 70px 15px;
+}
+
+.trailer h2{
+    font-size:40px;
+}
+
+/* MOVIE LINK */
+
+.movie-link{
+    padding:20px 70px 15px;
+}
+
+.movie-link h2{
+    font-size:40px;
+}
+
+/* BUTTONS */
+
+.trailer button,
+.movie-link button{
+
+    margin-top:25px;
+    padding:18px 35px;
+    background:#e50914;
+    border:none;
+    border-radius:10px;
+    color:white;
+    font-size:20px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.trailer button:hover,
+.movie-link button:hover{
+    background:#ff1f2f;
+}
+
+a{
+    text-decoration:none;
+}
+footer{
+    text-align:center;
+    padding:30px;
+    background:#0f0f0f;
+    color:#888;
+    margin-top:120px;
+    font-size:14px;
+    width:100%;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<div class="navbar">
+
+    <div class="logo">
+        Cine<span>Scope</span>
+    </div>
+
+</div>
+
+<!-- BACK BUTTON -->
+
+<div class="back-btn">
+
+    <a href="index.html">
+
+        <button>
+            ⬅ Back to Home
+        </button>
+
+    </a>
+
+</div>
+
+<!-- HERO MOVIE SECTION -->
+
+<div class="hero-movie">
+
+    <div class="poster">
+
+        <img src="https://i.redd.it/g25v71az1hgc1.jpeg">
+
+    </div>
+
+    <div class="details">
+
+        <h1>Hi Nanna</h1>
+
+        <div class="rating">
+            ⭐ 8.3/10
+        </div>
+
+        <div class="genre">
+            Romance, Drama
+        </div>
+
+        <div class="lang">
+
+            <span>Telugu</span>
+            <span>Hindi</span>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ABOUT -->
+
+<div class="about">
+
+    <h2>About the Movie</h2>
+
+    <p>
+        Hi Nanna is a heartwarming Telugu emotional drama starring Nani and Mrunal Thakur.
+        The movie beautifully explores love, fatherhood, heartbreak, and second chances through emotional storytelling.
+    </p>
+
+</div>
+
+<!-- TRAILER -->
+
+<div class="trailer">
+
+    <h2>Trailer</h2>
+
+    <a href="https://www.youtube.com/watch?v=Iz97_kxHaSc"
+    target="_blank">
+
+        <button>
+            Watch Trailer on YouTube
+        </button>
+
+    </a>
+
+</div>
+
+<!-- MOVIE LINK -->
+
+<div class="movie-link">
+
+    <h2>Watch Movie</h2>
+
+    <a href="https://www.youtube.com/watch?v=Qr_9OxQy5fM"
+    target="_blank">
+
+        <button>
+            Watch on YouTube
+        </button>
+
+    </a>
+
+</div>
+<footer>
+
+Movie posters, trailers, and related media belong to their respective owners.
+This website is created for educational purposes only.
+
+</footer>
+</body>
+
+</html>
